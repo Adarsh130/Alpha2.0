@@ -1,0 +1,151 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #e9ecef, #f2f2f2);  /* Gradient background */
+    margin: 0;
+    padding: 20px;
+}
+
+/* Container Styles */
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #ffffff;  /* White background */
+    padding: 20px;
+    border-radius: 12px;  /* Rounded corners */
+    box-shadow: 0 6px 30px rgba(0, 0, 0, 0.1);  /* More pronounced shadow */
+}
+
+/* Title Styles */
+.title {
+    text-align: center;
+    color: #343a40;  /* Dark gray color */
+    font-size: 28px;  /* Increased font size */
+    margin-bottom: 20px;
+}
+
+/* Chat Container Styles */
+.chat-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Chat Box Styles */
+.chat-box {
+    border: 1px solid #ced4da;  /* Light border */
+    background-color: #f8f9fa;  /* Slightly off-white */
+    padding: 10px;
+    margin-bottom: 10px;
+    height: 300px;
+    overflow-y: auto;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);  /* Soft inner shadow */
+}
+
+/* Message Styles */
+.message {
+    margin: 10px 0;
+    padding: 10px 15px;  /* More padding for better spacing */
+    border-radius: 12px;  /* Rounded message bubbles */
+    max-width: 80%;  /* Limit message width */
+    font-size: 16px;  /* Increased font size for readability */
+}
+
+.user {
+    background-color: #007bff;  /* Bootstrap primary color */
+    color: white;
+    align-self: flex-end;  /* Align user messages to the right */
+}
+
+.bot {
+    background-color: #28a745;  /* Bootstrap success color */
+    color: white;
+    align-self: flex-start;  /* Align bot messages to the left */
+}
+
+/* Form Styles */
+.chat-form {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* Input Field Styles */
+#prompt {
+    flex-grow: 1;
+    padding: 12px;
+    border: 1px solid #ced4da;  /* Light border */
+    border-radius: 8px;  /* Rounded corners */
+    font-size: 16px;  /* Slightly larger font */
+    transition: border-color 0.3s;  /* Transition for hover effect */
+}
+
+/* Input Field Focus Styles */
+#prompt:focus {
+    border-color: #007bff;  /* Blue border on focus */
+    outline: none;  /* Remove outline */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);  /* Light shadow on focus */
+}
+
+/* Button Styles */
+button {
+    margin-left: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;  /* Rounded corners */
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;  /* Transition for hover effect */
+    display: flex;  /* Flexbox for aligning icon and text */
+    align-items: center;  /* Center the icon and text vertically */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Button shadow */
+}
+
+/* Submit Button Styles */
+#submit-btn {
+    background-color: #007bff;  /* Bootstrap primary color */
+    color: white;
+}
+
+/* Voice Button Styles */
+#voice-btn {
+    background-color: #28a745;  /* Bootstrap success color */
+    color: white;
+}
+
+/* Adjusting the microphone icon size */
+#voice-btn i {
+    margin-right: 5px;  /* Spacing between icon and text */
+    font-size: 1.2em;  /* Slightly larger icon */
+}
+
+/* Button Hover Effects */
+#submit-btn:hover {
+    background-color: #0056b3;  /* Darker blue on hover */
+    transform: translateY(-1px);  /* Slight lift effect */
+}
+
+#voice-btn:hover {
+    background-color: #218838;  /* Darker green on hover */
+    transform: translateY(-1px);  /* Slight lift effect */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .container {
+        width: 95%;  /* Full width on small screens */
+        padding: 15px;  /* Reduced padding */
+    }
+
+    .title {
+        font-size: 22px;  /* Smaller title on small screens */
+    }
+
+    #prompt {
+        font-size: 14px;  /* Smaller font size for input */
+    }
+
+    button {
+        padding: 8px 10px;  /* Smaller button size */
+    }
+}
